@@ -16,6 +16,7 @@ echo $loops .' loops. encode[sec.]'.$elapsed.PHP_EOL;
 
 
 $serialized = $benchmarker->enc($data);
+var_dump($serialized);
 
 $start_time = microtime(true);
 for($i=0;$i<$loops;++$i){
@@ -25,3 +26,5 @@ $elapsed = microtime(true) - $start_time;
 
 echo $loops .' loops. decode[sec.]'.$elapsed.PHP_EOL;
 
+$deserialized = $benchmarker->dec($serialized);
+var_dump($deserialized);
