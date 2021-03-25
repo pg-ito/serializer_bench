@@ -1,0 +1,15 @@
+// Example IDL file for our monster's schema.
+
+namespace SerializerBench.DataHolder;
+
+
+
+table data_holder {
+  int_value:long;
+  float_value:double;
+  string_value:string;
+  array_value:[long];
+}
+
+
+root_type data_holder;
