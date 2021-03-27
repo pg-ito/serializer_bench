@@ -1,7 +1,7 @@
 <?php
 $type = $argv[1]?? 'json';
 
-$loops = $argv[3]?? 1000000;
+$loops = $argv[2]?? 1000000;
 
 require_once('data_holder.php');
 
